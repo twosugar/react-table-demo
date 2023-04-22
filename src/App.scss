@@ -47,12 +47,12 @@
       font-size: 20px;
       font-weight: bold;
     }
-    input {
-      width: 320px;
+    .search-input {
+      width: 330px;
       box-sizing: border-box;
       height: 28px;
       margin-right: 8px;
-      padding-left: 25px;
+      font-size: 12px;
     }
     button {
       width: 104px;
@@ -66,14 +66,11 @@
   }
 
   .table-header-right {
-    position: relative;
+    display: flex;
+    align-items: center;
     .search-icon {
-      position: absolute;
       height: 20px;
       width: 20px;
-      top: 50%;
-      left: 5px;
-      transform: translateY(-50%);
     }
   }
 
@@ -93,5 +90,11 @@
 
   .table-cell {
     display: flex;
+  }
+}
+
+.config-modal {
+  .ant-form-item {
+    margin-bottom: 12px;
   }
 }
